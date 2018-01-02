@@ -1,0 +1,15 @@
+form li {
+	list-style: none;   /* without bullet */
+	padding-bottom: 20px;
+}
+
+form ul {
+    padding-left: 0px;
+}
+
+label {
+	display: block;   /* not inline */
+	cursor: pointer;    /* cursor change to hand shape pointer*/
+	color: #292929;
+	font-family: sens-serif;
+}
