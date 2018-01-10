@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	<meta charset=“utf-8” name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="style.css" />
+	<title>Responsive</title>
+</head>
+
+<body>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="col1">
+    25%
+  </div>
+  <div class="col2">
+    75%
+  </div>
+
+<p>When the screen (browser window) gets smaller than 768px, each column should have a width of 100%:</p>
+<div class="row" name="oneBreakpoint">
+  <div class="col-3">
+    col-3
+  </div>
+  <div class="col-9">
+    col-9
+  </div>
+</div>
+
+<p>When the screen (browser window) gets smaller than 768px, each column should have a width of 50%;
+  <br/>
+  When the screen (browser window) gets smaller than 600px, each column should have a width of 100%:
+</p>
+<div class="row" name="twoBreakpoints">
+  <div class="col-3 col-m-6">
+    col-3 col-m-6
+  </div>
+  <div class="col-9 col-m-6">
+    col-9 col-m-6
+  </div>
+</div>
+
+<!-- set property background-size to different value -->
+<p>The background-size property is set to "contain".</p>
+<div class="contain"></div>
+
+<p>The background-size property is set to "100% 100%".</p>
+<div class="hundred"></div>
+
+<p>The background-size property is set to "cover".</p>
+<div class="cover"></div>
+
+<picture>
+  <source srcset="sun.jpeg" media="(max-width: 768px)">
+  <source srcset="stars.jpg">
+  <img src="stars.jpg" alt="sky" style="max-width:100%;">
+</picture>
+
+</body>
+
+</html>
